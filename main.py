@@ -72,7 +72,7 @@ predictions = rf.predict(test_data)
 
 # Calculate the absolute errors
 errors = abs(predictions - test_labels)
-print('Mean Absolute Error:', round(np.mean(errors), 2), 'degrees.')
+print('Mean Absolute Error:', round(np.mean(errors), 2), 'points.')
 
 mape = 100 * (errors / test_labels)# Calculate and display accuracy
 accuracy = 100 - np.mean(mape)
